@@ -43,6 +43,7 @@ background-btn-active: #2196F3
   --color-divider-line: #ececec;
   --color-gallery-item-border: #eeeeee;
   --bg-btn-active: #188ce8;
+  --bg-hero-alt: #c4c4c4;
 }
 /* html {
   box-sizing: border-box;
@@ -175,8 +176,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--txt-main);
 }
+.selected-link {
+  color: var(--accent-blue);
+}
 .header-adress-link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 31px;
   font-weight: 500;
@@ -184,9 +188,25 @@ ul {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--txt-paragraph-grey);
+  align-items: center;
 }
-.selected-link {
-  color: var(--accent-blue);
+.header-adress-link-1::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../images/email-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header-adress-link-2::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../images/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /* Footer */
 .footer {
@@ -219,6 +239,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  background-color: var(--bg-hero-alt);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
