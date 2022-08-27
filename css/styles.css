@@ -197,7 +197,8 @@ ul {
   margin-right: 16px;
   fill: var(--txt-paragraph-grey);
 }
-.header-adress-link:hover .header-adress-link-icon {
+.header-adress-link:hover .header-adress-link-icon,
+.header-adress-link:focus .header-adress-link-icon {
   fill: var(--accent-blue);
 }
 
@@ -380,19 +381,50 @@ ul {
   letter-spacing: 0.03em;
 }
 .staff-list-item p {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--txt-paragraph-grey);
 }
+.staff-socialmedia-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.socialmedia-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 100%;
+  background-color: transparent;
+}
+.socialmedia-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-grey);
+}
+.socialmedia-list-item + .socialmedia-list-item {
+  margin-left: 10px;
+}
+.socialmedia-link:hover,
+.socialmedia-link:focus {
+  background-color: var(--accent-blue);
+}
+.socialmedia-link:hover .socialmedia-list-icon,
+.socialmedia-link:focus .socialmedia-list-icon {
+  fill: var(--white);
+}
+
 /* Clients */
 .clients-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.clients-list > li {
+.clients-list-link {
   display: block;
   width: 170px;
   padding: 16px 32px;
@@ -405,10 +437,16 @@ ul {
   height: 60px;
   fill: var(--icon-grey);
 }
-.clients-list > li:hover {
+.clients-list-link:hover {
   border-color: var(--accent-blue);
 }
-.clients-list-icon:hover {
+.clients-list-link:focus {
+  border-color: var(--accent-blue);
+}
+.clients-list-link:hover .clients-list-icon {
+  fill: var(--accent-blue);
+}
+.clients-list-link:focus .clients-list-icon {
   fill: var(--accent-blue);
 }
 /* PORTFOLIO PAGE */
@@ -479,7 +517,10 @@ ul {
   border-left: 1px solid var(--color-gallery-item-border);
   border-bottom: 1px solid var(--color-gallery-item-border);
 }
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
+.portfolio-item-link {
+  display: block;
+}
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
