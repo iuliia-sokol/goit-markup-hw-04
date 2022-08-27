@@ -15,7 +15,9 @@
   --bg-btn-active: #188ce8;
   --bg-hero-alt: #c4c4c4;
   --icon-grey: #afb1b8;
+  --footer-socialmedia-bg: rgba(255, 255, 255, 0.1);
 }
+
 /* General */
 
 body {
@@ -233,7 +235,7 @@ ul {
   height: 44px;
   padding: 12px;
   border-radius: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-socialmedia-bg);
 }
 .footer-socialmedia-icon {
   width: 20px;
