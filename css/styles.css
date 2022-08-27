@@ -190,7 +190,16 @@ ul {
   color: var(--txt-paragraph-grey);
   align-items: center;
 }
-.header-adress-link:nth-child(1):before {
+.header-adress-link-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+}
+.header-adress-link-icon:hover {
+  color: var(--accent-blue);
+}
+
+/* .header-adress-link:nth-child(1):before {
   content: "";
   width: 16px;
   height: 12px;
@@ -207,7 +216,7 @@ ul {
   background-image: url("../images/phone-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 /* Footer */
 .footer {
@@ -241,7 +250,7 @@ ul {
   padding-bottom: 200px;
   max-width: 1600px;
   background-color: var(--bg-hero-alt);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img.jpg");
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,7 +310,12 @@ ul {
   letter-spacing: 0.03em;
   color: var(--txt-paragraph-grey);
 }
-
+.priorities-list-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+/* 
 .priorities-list-item::before {
   content: "";
   display: block;
@@ -322,7 +336,7 @@ ul {
 }
 .priorities-list-item:nth-child(4)::before {
   background-image: url(../images/Prior-4.svg);
-}
+} */
 /* Projects */
 .projects {
   padding-top: 0px;
