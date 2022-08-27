@@ -1,34 +1,4 @@
-/* Colors palette:
-
-TEXT: 
-txt-logo-black: #000000 
-txt-logo-white:  #FFFFFF
-txt-accent-blue: #2196F3
-
-txt-hero-header: #FFFFFF
-
-txt-headers: #212121
-txt-paragraphs:  #757575
-
-txt-btn-unactive: #212121
-txt-btn-active: #FFFFFF
-
-txt-header-link: #757575
-txt-adress-link: #FFFFFF
-txt-adress-link-transparent: rgba(255, 255, 255, 0.6);
-
-ELEMENTS:
-background-header: #FFFFFF
-background-footer: #2F303A
-background-main: ##F5F5F5
-background-staff: #F5F4FA
-
-color-divider-line: #ECECEC
-color-gallery-item-border: #EEEEEE
-
-background-btn-unactive: #F5F4FA
-background-btn-active: #2196F3
- */
+/* Colors palette: */
 
 :root {
   --txt-logo-black: #000000;
@@ -46,14 +16,8 @@ background-btn-active: #2196F3
   --bg-hero-alt: #c4c4c4;
   --icon-grey: #afb1b8;
 }
-/* html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
+/* General */
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--txt-main);
@@ -70,6 +34,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 /* Elements' common styles */
 .container {
   width: 1200px;
@@ -227,6 +192,13 @@ ul {
   padding-bottom: 60px;
   background-color: var(--bg-footer);
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts-block {
+  margin-right: 70px;
+}
 .footer-content-list {
   font-style: normal;
   font-size: 14px;
@@ -241,6 +213,43 @@ ul {
 }
 .footer-contacts-link {
   color: var(--txt-adress-link-transparent);
+}
+.footer-socialmedia-claimer {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.footer-socialmedia-list {
+  display: flex;
+  align-items: center;
+}
+.footer-socialmedia-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-socialmedia-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+.footer-socialmedia-list-item + .footer-socialmedia-list-item {
+  margin-left: 10px;
+}
+.footer-socialmedia-link:hover,
+.footer-socialmedia-link:focus {
+  background-color: var(--accent-blue);
+}
+.footer-socialmedia-link:hover .footer-socialmedia-icon,
+.footer-socialmedia-link:focus .footer-socialmedia-icon {
+  fill: var(--white);
 }
 
 /* HOME PAGE */
