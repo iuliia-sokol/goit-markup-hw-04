@@ -173,7 +173,7 @@ ul {
 .header-adress-link-icon {
   width: 16px;
   height: 16px;
-  margin-right: 16px;
+  margin-right: 10px;
   fill: var(--txt-paragraph-grey);
 }
 .header-adress-link:hover .header-adress-link-icon,
