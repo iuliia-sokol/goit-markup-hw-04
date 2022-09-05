@@ -472,7 +472,6 @@ ul {
   align-items: center;
   width: 170px;
   min-height: 92px;
-  align-items: center;
   border: 1px solid var(--icon-grey);
   border-radius: 4px;
 }
