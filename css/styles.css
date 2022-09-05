@@ -48,7 +48,7 @@ ul {
   padding-bottom: 94px;
 }
 .section-header {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -276,7 +276,12 @@ ul {
   padding-bottom: 200px;
   max-width: 1600px;
   background-color: var(--bg-hero-alt);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-img.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,22 +402,24 @@ ul {
 .staff-list-item {
   width: calc((100% - 90px) / 4);
   background-color: var(--white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .staff-list-item + .staff-list-item {
   margin-left: 30px;
 }
-.staff-list-item > h3 {
-  margin-top: 30px;
+.staf-member-descr {
+  padding: 30px 15px;
+}
+.staf-member-descr > h3 {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.staff-list-item p {
-  margin-bottom: 16px;
+.staf-member-descr > p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -503,7 +510,8 @@ ul {
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
   background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-filter-btn-1 {
   padding-left: 25px;
@@ -540,9 +548,7 @@ ul {
   color: var(--txt-paragraph-grey);
 }
 .portfolio-list-item div {
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 19px;
+  padding: 20px 24px 19px 24px;
   background-color: var(--white);
   border-right: 1px solid var(--color-gallery-item-border);
   border-left: 1px solid var(--color-gallery-item-border);
@@ -553,5 +559,6 @@ ul {
 }
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
